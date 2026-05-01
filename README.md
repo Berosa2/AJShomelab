@@ -1,5 +1,7 @@
 # Água Jump Studios — Homelab System
 
+[![Build Status](https://github.com/acidanthera/OpenCorePkg/actions/workflows/build.yml/badge.svg?branch=master)](https://github.com/acidanthera/AJShomelab/actions)
+
 AJShomelab is a lightweight tool that turns your PC into a personal server with basic authentication support.
 
 > ⚠️ **Status:** Beta — features may change and bugs are expected.
