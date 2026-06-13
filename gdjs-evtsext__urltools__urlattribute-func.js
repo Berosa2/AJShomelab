@@ -1,32 +1,33 @@
 
-if (typeof gdjs.evtsExt__PanelSpriteButton__IsInGameEdition !== "undefined") {
-  gdjs.evtsExt__PanelSpriteButton__IsInGameEdition.registeredGdjsCallbacks.forEach(callback =>
+if (typeof gdjs.evtsExt__URLTools__URLAttribute !== "undefined") {
+  gdjs.evtsExt__URLTools__URLAttribute.registeredGdjsCallbacks.forEach(callback =>
     gdjs._unregisterCallback(callback)
   );
 }
 
-gdjs.evtsExt__PanelSpriteButton__IsInGameEdition = {};
-gdjs.evtsExt__PanelSpriteButton__IsInGameEdition.idToCallbackMap = new Map();
+gdjs.evtsExt__URLTools__URLAttribute = {};
+gdjs.evtsExt__URLTools__URLAttribute.idToCallbackMap = new Map();
 
 
-gdjs.evtsExt__PanelSpriteButton__IsInGameEdition.userFunc0xb1ebc0 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__URLTools__URLAttribute.userFunc0xa08ce0 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
 "use strict";
-const game = runtimeScene.getGame();
-eventsFunctionContext.returnValue = game.isInGameEdition && game.isInGameEdition();
+eventsFunctionContext.returnValue =
+    (new URL(eventsFunctionContext.getArgument("URL")))[eventsFunctionContext.getArgument("attr")];
+
 };
-gdjs.evtsExt__PanelSpriteButton__IsInGameEdition.eventsList0 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__URLTools__URLAttribute.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
-gdjs.evtsExt__PanelSpriteButton__IsInGameEdition.userFunc0xb1ebc0(runtimeScene, eventsFunctionContext);
+gdjs.evtsExt__URLTools__URLAttribute.userFunc0xa08ce0(runtimeScene, eventsFunctionContext);
 
 }
 
 
 };
 
-gdjs.evtsExt__PanelSpriteButton__IsInGameEdition.func = function(runtimeScene, parentEventsFunctionContext) {
+gdjs.evtsExt__URLTools__URLAttribute.func = function(runtimeScene, URL, attr, parentEventsFunctionContext) {
 let scopeInstanceContainer = null;
 var eventsFunctionContext = {
   _objectsMap: {
@@ -35,8 +36,8 @@ var eventsFunctionContext = {
 },
   _behaviorNamesMap: {
 },
-  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("PanelSpriteButton"),
-  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("PanelSpriteButton"),
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("URLTools"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("URLTools"),
   localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
@@ -78,16 +79,18 @@ parentEventsFunctionContext.getInstancesCountOnScene(objectName) :
     return runtimeScene.getLayer(layerName);
   },
   getArgument: function(argName) {
+if (argName === "URL") return URL;
+if (argName === "attr") return attr;
     return "";
   },
   getOnceTriggers: function() { return runtimeScene.getOnceTriggers(); }
 };
 
 
-gdjs.evtsExt__PanelSpriteButton__IsInGameEdition.eventsList0(runtimeScene, eventsFunctionContext);
+gdjs.evtsExt__URLTools__URLAttribute.eventsList0(runtimeScene, eventsFunctionContext);
 
 
-return !!eventsFunctionContext.returnValue;
+return "" + eventsFunctionContext.returnValue;
 }
 
-gdjs.evtsExt__PanelSpriteButton__IsInGameEdition.registeredGdjsCallbacks = [];
+gdjs.evtsExt__URLTools__URLAttribute.registeredGdjsCallbacks = [];

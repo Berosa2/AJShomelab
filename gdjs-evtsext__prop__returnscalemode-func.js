@@ -9,7 +9,7 @@ gdjs.evtsExt__Prop__ReturnScaleMode = {};
 gdjs.evtsExt__Prop__ReturnScaleMode.idToCallbackMap = new Map();
 
 
-gdjs.evtsExt__Prop__ReturnScaleMode.userFunc0xa56ad8 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__Prop__ReturnScaleMode.userFunc0xb51c98 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
 "use strict";
 eventsFunctionContext.returnValue = runtimeScene.getGame().getGameData().properties.scaleMode;
 };
@@ -18,7 +18,7 @@ gdjs.evtsExt__Prop__ReturnScaleMode.eventsList0 = function(runtimeScene, eventsF
 {
 
 
-gdjs.evtsExt__Prop__ReturnScaleMode.userFunc0xa56ad8(runtimeScene, eventsFunctionContext);
+gdjs.evtsExt__Prop__ReturnScaleMode.userFunc0xb51c98(runtimeScene, eventsFunctionContext);
 
 }
 
@@ -54,7 +54,9 @@ var eventsFunctionContext = {
         runtimeScene.createObject(objectsList.firstKey());
       if (object) {
         objectsList.get(objectsList.firstKey()).push(object);
-        eventsFunctionContext._objectArraysMap[objectName].push(object);
+        if (!(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName))) {
+          eventsFunctionContext._objectArraysMap[objectName].push(object);
+        }
       }
       return object;
     }

@@ -1,45 +1,32 @@
 
-if (typeof gdjs.evtsExt__UploadDownloadTextFile__UploadFinished !== "undefined") {
-  gdjs.evtsExt__UploadDownloadTextFile__UploadFinished.registeredGdjsCallbacks.forEach(callback =>
+if (typeof gdjs.evtsExt__URLTools__Redirect !== "undefined") {
+  gdjs.evtsExt__URLTools__Redirect.registeredGdjsCallbacks.forEach(callback =>
     gdjs._unregisterCallback(callback)
   );
 }
 
-gdjs.evtsExt__UploadDownloadTextFile__UploadFinished = {};
-gdjs.evtsExt__UploadDownloadTextFile__UploadFinished.idToCallbackMap = new Map();
+gdjs.evtsExt__URLTools__Redirect = {};
+gdjs.evtsExt__URLTools__Redirect.idToCallbackMap = new Map();
 
 
-gdjs.evtsExt__UploadDownloadTextFile__UploadFinished.eventsList0 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__URLTools__Redirect.userFunc0xa065f8 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
+"use strict";
+location.replace(eventsFunctionContext.getArgument("to"));
 
-{
-
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.variable.getVariableBoolean(runtimeScene.getScene().getVariables().get("__UploadDownloadTextFile").getChild("Uploading"), false);
-if (isConditionTrue_0) {
-{eventsFunctionContext.returnValue = false;}
-}
-
-}
-
+};
+gdjs.evtsExt__URLTools__Redirect.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.variable.getVariableBoolean(runtimeScene.getScene().getVariables().get("__UploadDownloadTextFile").getChild("Uploading"), true);
-if (isConditionTrue_0) {
-{eventsFunctionContext.returnValue = true;}
-}
+gdjs.evtsExt__URLTools__Redirect.userFunc0xa065f8(runtimeScene, eventsFunctionContext);
 
 }
 
 
 };
 
-gdjs.evtsExt__UploadDownloadTextFile__UploadFinished.func = function(runtimeScene, parentEventsFunctionContext) {
+gdjs.evtsExt__URLTools__Redirect.func = function(runtimeScene, to, parentEventsFunctionContext) {
 let scopeInstanceContainer = null;
 var eventsFunctionContext = {
   _objectsMap: {
@@ -48,8 +35,8 @@ var eventsFunctionContext = {
 },
   _behaviorNamesMap: {
 },
-  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("UploadDownloadTextFile"),
-  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("UploadDownloadTextFile"),
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("URLTools"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("URLTools"),
   localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
@@ -68,7 +55,9 @@ var eventsFunctionContext = {
         runtimeScene.createObject(objectsList.firstKey());
       if (object) {
         objectsList.get(objectsList.firstKey()).push(object);
-        eventsFunctionContext._objectArraysMap[objectName].push(object);
+        if (!(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName))) {
+          eventsFunctionContext._objectArraysMap[objectName].push(object);
+        }
       }
       return object;
     }
@@ -89,16 +78,17 @@ parentEventsFunctionContext.getInstancesCountOnScene(objectName) :
     return runtimeScene.getLayer(layerName);
   },
   getArgument: function(argName) {
+if (argName === "to") return to;
     return "";
   },
   getOnceTriggers: function() { return runtimeScene.getOnceTriggers(); }
 };
 
 
-gdjs.evtsExt__UploadDownloadTextFile__UploadFinished.eventsList0(runtimeScene, eventsFunctionContext);
+gdjs.evtsExt__URLTools__Redirect.eventsList0(runtimeScene, eventsFunctionContext);
 
 
-return !!eventsFunctionContext.returnValue;
+return;
 }
 
-gdjs.evtsExt__UploadDownloadTextFile__UploadFinished.registeredGdjsCallbacks = [];
+gdjs.evtsExt__URLTools__Redirect.registeredGdjsCallbacks = [];

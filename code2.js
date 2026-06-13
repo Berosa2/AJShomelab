@@ -1,30 +1,81 @@
-gdjs.Connectivity_45testCode = {};
-gdjs.Connectivity_45testCode.localVariables = [];
-gdjs.Connectivity_45testCode.idToCallbackMap = new Map();
-gdjs.Connectivity_45testCode.GDUIDObjects1= [];
-gdjs.Connectivity_45testCode.GDUIDObjects2= [];
-gdjs.Connectivity_45testCode.GDUID_9595homelabObjects1= [];
-gdjs.Connectivity_45testCode.GDUID_9595homelabObjects2= [];
-gdjs.Connectivity_45testCode.GDNewTextObjects1= [];
-gdjs.Connectivity_45testCode.GDNewTextObjects2= [];
-gdjs.Connectivity_45testCode.GDHomeObjects1= [];
-gdjs.Connectivity_45testCode.GDHomeObjects2= [];
-gdjs.Connectivity_45testCode.GDUser_9595iconObjects1= [];
-gdjs.Connectivity_45testCode.GDUser_9595iconObjects2= [];
-gdjs.Connectivity_45testCode.GDAppsObjects1= [];
-gdjs.Connectivity_45testCode.GDAppsObjects2= [];
-gdjs.Connectivity_45testCode.GDSettingsObjects1= [];
-gdjs.Connectivity_45testCode.GDSettingsObjects2= [];
+gdjs.ConnectarCode = {};
+gdjs.ConnectarCode.localVariables = [];
+gdjs.ConnectarCode.idToCallbackMap = new Map();
+gdjs.ConnectarCode.GDUUIDObjects1= [];
+gdjs.ConnectarCode.GDUUIDObjects2= [];
+gdjs.ConnectarCode.GDUUIDObjects3= [];
+gdjs.ConnectarCode.GDConnectedObjects1= [];
+gdjs.ConnectarCode.GDConnectedObjects2= [];
+gdjs.ConnectarCode.GDConnectedObjects3= [];
+gdjs.ConnectarCode.GDStatusObjects1= [];
+gdjs.ConnectarCode.GDStatusObjects2= [];
+gdjs.ConnectarCode.GDStatusObjects3= [];
+gdjs.ConnectarCode.GDNextObjects1= [];
+gdjs.ConnectarCode.GDNextObjects2= [];
+gdjs.ConnectarCode.GDNextObjects3= [];
+gdjs.ConnectarCode.GDTitleObjects1= [];
+gdjs.ConnectarCode.GDTitleObjects2= [];
+gdjs.ConnectarCode.GDTitleObjects3= [];
+gdjs.ConnectarCode.GDStatus2Objects1= [];
+gdjs.ConnectarCode.GDStatus2Objects2= [];
+gdjs.ConnectarCode.GDStatus2Objects3= [];
+gdjs.ConnectarCode.GDHomeObjects1= [];
+gdjs.ConnectarCode.GDHomeObjects2= [];
+gdjs.ConnectarCode.GDHomeObjects3= [];
+gdjs.ConnectarCode.GDUser_9595iconObjects1= [];
+gdjs.ConnectarCode.GDUser_9595iconObjects2= [];
+gdjs.ConnectarCode.GDUser_9595iconObjects3= [];
+gdjs.ConnectarCode.GDAppsObjects1= [];
+gdjs.ConnectarCode.GDAppsObjects2= [];
+gdjs.ConnectarCode.GDAppsObjects3= [];
+gdjs.ConnectarCode.GDSettingsObjects1= [];
+gdjs.ConnectarCode.GDSettingsObjects2= [];
+gdjs.ConnectarCode.GDSettingsObjects3= [];
+gdjs.ConnectarCode.GDFilesObjects1= [];
+gdjs.ConnectarCode.GDFilesObjects2= [];
+gdjs.ConnectarCode.GDFilesObjects3= [];
 
 
-gdjs.Connectivity_45testCode.asyncCallback13251660 = function (runtimeScene, asyncObjectsList) {
-asyncObjectsList.restoreLocalVariablesContainers(gdjs.Connectivity_45testCode.localVariables);
-{gdjs.evtTools.p2p.sendVariableToAll("Get-admin", gdjs.VariablesContainer.badVariable);
+gdjs.ConnectarCode.asyncCallback13232244 = function (runtimeScene, asyncObjectsList) {
+asyncObjectsList.restoreLocalVariablesContainers(gdjs.ConnectarCode.localVariables);
+gdjs.ConnectarCode.localVariables.length = 0;
 }
-gdjs.Connectivity_45testCode.localVariables.length = 0;
+gdjs.ConnectarCode.idToCallbackMap.set(13232244, gdjs.ConnectarCode.asyncCallback13232244);
+gdjs.ConnectarCode.eventsList0 = function(runtimeScene, asyncObjectsList) {
+
+{
+
+
+{
+const parentAsyncObjectsList = asyncObjectsList;
+{
+const asyncObjectsList = gdjs.LongLivedObjectsList.from(parentAsyncObjectsList);
+asyncObjectsList.backupLocalVariablesContainers(gdjs.ConnectarCode.localVariables);
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(0.5), (runtimeScene) => (gdjs.ConnectarCode.asyncCallback13232244(runtimeScene, asyncObjectsList)), 13232244, asyncObjectsList);
 }
-gdjs.Connectivity_45testCode.idToCallbackMap.set(13251660, gdjs.Connectivity_45testCode.asyncCallback13251660);
-gdjs.Connectivity_45testCode.eventsList0 = function(runtimeScene) {
+}
+
+}
+
+
+};gdjs.ConnectarCode.asyncCallback13231748 = function (runtimeScene, asyncObjectsList) {
+asyncObjectsList.restoreLocalVariablesContainers(gdjs.ConnectarCode.localVariables);
+gdjs.copyArray(runtimeScene.getObjects("Next"), gdjs.ConnectarCode.GDNextObjects2);
+{gdjs.evtTools.network.jsonToVariableStructure(runtimeScene.getScene().getVariables().getFromIndex(1).getAsString(), runtimeScene.getScene().getVariables().getFromIndex(2));
+}
+{for(var i = 0, len = gdjs.ConnectarCode.GDNextObjects2.length ;i < len;++i) {
+    gdjs.ConnectarCode.GDNextObjects2[i].hide();
+}
+}
+{gdjs.evtTools.p2p.useDefaultBrokerServer();
+}
+
+{ //Subevents
+gdjs.ConnectarCode.eventsList0(runtimeScene, asyncObjectsList);} //End of subevents
+gdjs.ConnectarCode.localVariables.length = 0;
+}
+gdjs.ConnectarCode.idToCallbackMap.set(13231748, gdjs.ConnectarCode.asyncCallback13231748);
+gdjs.ConnectarCode.eventsList1 = function(runtimeScene) {
 
 {
 
@@ -32,24 +83,183 @@ gdjs.Connectivity_45testCode.eventsList0 = function(runtimeScene) {
 {
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
-asyncObjectsList.backupLocalVariablesContainers(gdjs.Connectivity_45testCode.localVariables);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(0.21), (runtimeScene) => (gdjs.Connectivity_45testCode.asyncCallback13251660(runtimeScene, asyncObjectsList)), 13251660, asyncObjectsList);
+asyncObjectsList.backupLocalVariablesContainers(gdjs.ConnectarCode.localVariables);
+runtimeScene.getAsyncTasksManager().addTask(gdjs.fileSystem.loadStringFromFileAsyncTask(runtimeScene.getScene().getVariables().getFromIndex(1), "C:\\AJShub\\configuration.json", runtimeScene.getScene().getVariables().getFromIndex(3), true), (runtimeScene) => (gdjs.ConnectarCode.asyncCallback13231748(runtimeScene, asyncObjectsList)), 13231748, asyncObjectsList);
 }
 }
 
 }
 
 
-};gdjs.Connectivity_45testCode.eventsList1 = function(runtimeScene) {
+};gdjs.ConnectarCode.asyncCallback13236876 = function (runtimeScene, asyncObjectsList) {
+asyncObjectsList.restoreLocalVariablesContainers(gdjs.ConnectarCode.localVariables);
+gdjs.ConnectarCode.localVariables.length = 0;
+}
+gdjs.ConnectarCode.idToCallbackMap.set(13236876, gdjs.ConnectarCode.asyncCallback13236876);
+gdjs.ConnectarCode.eventsList2 = function(runtimeScene) {
 
 {
 
+
+{
+{
+const asyncObjectsList = new gdjs.LongLivedObjectsList();
+asyncObjectsList.backupLocalVariablesContainers(gdjs.ConnectarCode.localVariables);
+runtimeScene.getAsyncTasksManager().addTask(gdjs.fileSystem.saveStringToFileAsyncTask(gdjs.evtTools.network.variableStructureToJSON(runtimeScene.getScene().getVariables().getFromIndex(2)), "C:\\AJShub\\configuration.json", gdjs.VariablesContainer.badVariable), (runtimeScene) => (gdjs.ConnectarCode.asyncCallback13236876(runtimeScene, asyncObjectsList)), 13236876, asyncObjectsList);
+}
+}
+
+}
+
+
+};gdjs.ConnectarCode.eventsList3 = function(runtimeScene) {
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("Status2"), gdjs.ConnectarCode.GDStatus2Objects1);
 
 let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.ConnectarCode.GDStatus2Objects1.length;i<l;++i) {
+    if ( gdjs.ConnectarCode.GDStatus2Objects1[i].getBehavior("Animation").getAnimationName() == "error" ) {
+        isConditionTrue_0 = true;
+        gdjs.ConnectarCode.GDStatus2Objects1[k] = gdjs.ConnectarCode.GDStatus2Objects1[i];
+        ++k;
+    }
+}
+gdjs.ConnectarCode.GDStatus2Objects1.length = k;
+if (isConditionTrue_0) {
+
+{ //Subevents
+gdjs.ConnectarCode.eventsList2(runtimeScene);} //End of subevents
+}
+
+}
+
+
+};gdjs.ConnectarCode.eventsList4 = function(runtimeScene) {
+
 {
-gdjs.copyArray(runtimeScene.getObjects("UID"), gdjs.Connectivity_45testCode.GDUIDObjects1);
-{for(var i = 0, len = gdjs.Connectivity_45testCode.GDUIDObjects1.length ;i < len;++i) {
-    gdjs.Connectivity_45testCode.GDUIDObjects1[i].getBehavior("Text").setText(gdjs.evtTools.p2p.getCurrentId());
+
+gdjs.copyArray(runtimeScene.getObjects("Status"), gdjs.ConnectarCode.GDStatusObjects1);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.ConnectarCode.GDStatusObjects1.length;i<l;++i) {
+    if ( gdjs.ConnectarCode.GDStatusObjects1[i].getBehavior("Animation").getAnimationName() == "Loading" ) {
+        isConditionTrue_0 = true;
+        gdjs.ConnectarCode.GDStatusObjects1[k] = gdjs.ConnectarCode.GDStatusObjects1[i];
+        ++k;
+    }
+}
+gdjs.ConnectarCode.GDStatusObjects1.length = k;
+if (isConditionTrue_0) {
+/* Reuse gdjs.ConnectarCode.GDStatusObjects1 */
+{for(var i = 0, len = gdjs.ConnectarCode.GDStatusObjects1.length ;i < len;++i) {
+    gdjs.ConnectarCode.GDStatusObjects1[i].rotate(200, runtimeScene);
+}
+}
+}
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("Status2"), gdjs.ConnectarCode.GDStatus2Objects1);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.ConnectarCode.GDStatus2Objects1.length;i<l;++i) {
+    if ( gdjs.ConnectarCode.GDStatus2Objects1[i].getBehavior("Animation").getAnimationName() == "Loading" ) {
+        isConditionTrue_0 = true;
+        gdjs.ConnectarCode.GDStatus2Objects1[k] = gdjs.ConnectarCode.GDStatus2Objects1[i];
+        ++k;
+    }
+}
+gdjs.ConnectarCode.GDStatus2Objects1.length = k;
+if (isConditionTrue_0) {
+/* Reuse gdjs.ConnectarCode.GDStatus2Objects1 */
+{for(var i = 0, len = gdjs.ConnectarCode.GDStatus2Objects1.length ;i < len;++i) {
+    gdjs.ConnectarCode.GDStatus2Objects1[i].rotate(200, runtimeScene);
+}
+}
+}
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("Status"), gdjs.ConnectarCode.GDStatusObjects1);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.ConnectarCode.GDStatusObjects1.length;i<l;++i) {
+    if ( gdjs.ConnectarCode.GDStatusObjects1[i].getBehavior("Animation").getAnimationName() != "Loading" ) {
+        isConditionTrue_0 = true;
+        gdjs.ConnectarCode.GDStatusObjects1[k] = gdjs.ConnectarCode.GDStatusObjects1[i];
+        ++k;
+    }
+}
+gdjs.ConnectarCode.GDStatusObjects1.length = k;
+if (isConditionTrue_0) {
+/* Reuse gdjs.ConnectarCode.GDStatusObjects1 */
+{for(var i = 0, len = gdjs.ConnectarCode.GDStatusObjects1.length ;i < len;++i) {
+    gdjs.ConnectarCode.GDStatusObjects1[i].setAngle(0);
+}
+}
+}
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("Status2"), gdjs.ConnectarCode.GDStatus2Objects1);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.ConnectarCode.GDStatus2Objects1.length;i<l;++i) {
+    if ( gdjs.ConnectarCode.GDStatus2Objects1[i].getBehavior("Animation").getAnimationName() != "Loading" ) {
+        isConditionTrue_0 = true;
+        gdjs.ConnectarCode.GDStatus2Objects1[k] = gdjs.ConnectarCode.GDStatus2Objects1[i];
+        ++k;
+    }
+}
+gdjs.ConnectarCode.GDStatus2Objects1.length = k;
+if (isConditionTrue_0) {
+/* Reuse gdjs.ConnectarCode.GDStatus2Objects1 */
+{for(var i = 0, len = gdjs.ConnectarCode.GDStatus2Objects1.length ;i < len;++i) {
+    gdjs.ConnectarCode.GDStatus2Objects1[i].setAngle(0);
+}
+}
+}
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("Connected"), gdjs.ConnectarCode.GDConnectedObjects1);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.ConnectarCode.GDConnectedObjects1.length;i<l;++i) {
+    if ( gdjs.ConnectarCode.GDConnectedObjects1[i].IsClicked(null) ) {
+        isConditionTrue_0 = true;
+        gdjs.ConnectarCode.GDConnectedObjects1[k] = gdjs.ConnectarCode.GDConnectedObjects1[i];
+        ++k;
+    }
+}
+gdjs.ConnectarCode.GDConnectedObjects1.length = k;
+if (isConditionTrue_0) {
+gdjs.copyArray(runtimeScene.getObjects("Status"), gdjs.ConnectarCode.GDStatusObjects1);
+gdjs.copyArray(runtimeScene.getObjects("UUID"), gdjs.ConnectarCode.GDUUIDObjects1);
+{gdjs.evtTools.p2p.connect((( gdjs.ConnectarCode.GDUUIDObjects1.length === 0 ) ? "" :gdjs.ConnectarCode.GDUUIDObjects1[0].getBehavior("Text").getText()));
+}
+{for(var i = 0, len = gdjs.ConnectarCode.GDStatusObjects1.length ;i < len;++i) {
+    gdjs.ConnectarCode.GDStatusObjects1[i].getBehavior("Animation").setAnimationName("Loading");
 }
 }
 }
@@ -64,7 +274,42 @@ let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
 if (isConditionTrue_0) {
-{gdjs.evtTools.p2p.useDefaultBrokerServer();
+
+{ //Subevents
+gdjs.ConnectarCode.eventsList1(runtimeScene);} //End of subevents
+}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+{isConditionTrue_0 = (runtimeScene.getScene().getVariables().getFromIndex(2).getChild("app-uuid").getChild("simple-database").getAsString() != "0");
+}
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.p2p.isReady();
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(13233004);
+}
+}
+}
+if (isConditionTrue_0) {
+gdjs.copyArray(runtimeScene.getObjects("Status"), gdjs.ConnectarCode.GDStatusObjects1);
+gdjs.copyArray(runtimeScene.getObjects("UUID"), gdjs.ConnectarCode.GDUUIDObjects1);
+{for(var i = 0, len = gdjs.ConnectarCode.GDUUIDObjects1.length ;i < len;++i) {
+    gdjs.ConnectarCode.GDUUIDObjects1[i].getBehavior("Text").setText(runtimeScene.getScene().getVariables().getFromIndex(2).getChild("app-uuid").getChild("simple-database").getAsString());
+}
+}
+{gdjs.evtTools.p2p.connect((( gdjs.ConnectarCode.GDUUIDObjects1.length === 0 ) ? "" :gdjs.ConnectarCode.GDUUIDObjects1[0].getBehavior("Text").getText()));
+}
+{for(var i = 0, len = gdjs.ConnectarCode.GDStatusObjects1.length ;i < len;++i) {
+    gdjs.ConnectarCode.GDStatusObjects1[i].getBehavior("Animation").setAnimationName("Loading");
+}
 }
 }
 
@@ -73,26 +318,74 @@ if (isConditionTrue_0) {
 
 {
 
-gdjs.copyArray(runtimeScene.getObjects("UID_homelab"), gdjs.Connectivity_45testCode.GDUID_9595homelabObjects1);
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-for (var i = 0, k = 0, l = gdjs.Connectivity_45testCode.GDUID_9595homelabObjects1.length;i<l;++i) {
-    if ( gdjs.Connectivity_45testCode.GDUID_9595homelabObjects1[i].isSubmitted() ) {
+isConditionTrue_0 = gdjs.evtTools.p2p.onError();
+if (isConditionTrue_0) {
+gdjs.copyArray(runtimeScene.getObjects("Status"), gdjs.ConnectarCode.GDStatusObjects1);
+{for(var i = 0, len = gdjs.ConnectarCode.GDStatusObjects1.length ;i < len;++i) {
+    gdjs.ConnectarCode.GDStatusObjects1[i].getBehavior("Animation").setAnimationName("Error");
+}
+}
+}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.p2p.onEvent("Connect-sucess", false);
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(13235116);
+}
+}
+if (isConditionTrue_0) {
+gdjs.copyArray(runtimeScene.getObjects("Next"), gdjs.ConnectarCode.GDNextObjects1);
+gdjs.copyArray(runtimeScene.getObjects("Status"), gdjs.ConnectarCode.GDStatusObjects1);
+gdjs.copyArray(runtimeScene.getObjects("UUID"), gdjs.ConnectarCode.GDUUIDObjects1);
+{gdjs.evtTools.storage.writeStringInJSONFile("Server", "UUID", (( gdjs.ConnectarCode.GDUUIDObjects1.length === 0 ) ? "" :gdjs.ConnectarCode.GDUUIDObjects1[0].getBehavior("Text").getText()));
+}
+{for(var i = 0, len = gdjs.ConnectarCode.GDStatusObjects1.length ;i < len;++i) {
+    gdjs.ConnectarCode.GDStatusObjects1[i].getBehavior("Animation").setAnimationName("Success");
+}
+}
+{for(var i = 0, len = gdjs.ConnectarCode.GDNextObjects1.length ;i < len;++i) {
+    gdjs.ConnectarCode.GDNextObjects1[i].hide(false);
+}
+}
+{for(var i = 0, len = gdjs.ConnectarCode.GDUUIDObjects1.length ;i < len;++i) {
+    gdjs.ConnectarCode.GDUUIDObjects1[i].setDisabled(true);
+}
+}
+
+{ //Subevents
+gdjs.ConnectarCode.eventsList3(runtimeScene);} //End of subevents
+}
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("Next"), gdjs.ConnectarCode.GDNextObjects1);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.ConnectarCode.GDNextObjects1.length;i<l;++i) {
+    if ( gdjs.ConnectarCode.GDNextObjects1[i].IsClicked(null) ) {
         isConditionTrue_0 = true;
-        gdjs.Connectivity_45testCode.GDUID_9595homelabObjects1[k] = gdjs.Connectivity_45testCode.GDUID_9595homelabObjects1[i];
+        gdjs.ConnectarCode.GDNextObjects1[k] = gdjs.ConnectarCode.GDNextObjects1[i];
         ++k;
     }
 }
-gdjs.Connectivity_45testCode.GDUID_9595homelabObjects1.length = k;
+gdjs.ConnectarCode.GDNextObjects1.length = k;
 if (isConditionTrue_0) {
-isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(13250820);
-}
-}
-if (isConditionTrue_0) {
-/* Reuse gdjs.Connectivity_45testCode.GDUID_9595homelabObjects1 */
-{gdjs.evtTools.p2p.connect((( gdjs.Connectivity_45testCode.GDUID_9595homelabObjects1.length === 0 ) ? "" :gdjs.Connectivity_45testCode.GDUID_9595homelabObjects1[0].getBehavior("Text").getText()));
+{gdjs.evtTools.runtimeScene.pushScene(runtimeScene, "Create/Connect");
 }
 }
 
@@ -104,11 +397,16 @@ if (isConditionTrue_0) {
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.p2p.onConnection();
+isConditionTrue_0 = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
 if (isConditionTrue_0) {
-
-{ //Subevents
-gdjs.Connectivity_45testCode.eventsList0(runtimeScene);} //End of subevents
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.storage.elementExistsInJSONFile("Server", "UUID");
+}
+if (isConditionTrue_0) {
+{gdjs.evtTools.storage.readStringFromJSONFile("Server", "UUID", runtimeScene, runtimeScene.getScene().getVariables().getFromIndex(0));
+}
+{gdjs.evtTools.p2p.connect(runtimeScene.getScene().getVariables().getFromIndex(0).getAsString());
+}
 }
 
 }
@@ -119,18 +417,66 @@ gdjs.Connectivity_45testCode.eventsList0(runtimeScene);} //End of subevents
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.p2p.onEvent("Get-info-response", false);
+isConditionTrue_0 = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(13252836);
+{isConditionTrue_0 = !(gdjs.evtsExt__URLTools__URLQueryStringParameter.func(runtimeScene, gdjs.evtsExt__URLTools__CurrentURL.func(runtimeScene, null), "id", null) == "0");
 }
 }
 if (isConditionTrue_0) {
-gdjs.copyArray(runtimeScene.getObjects("NewText"), gdjs.Connectivity_45testCode.GDNewTextObjects1);
-{for(var i = 0, len = gdjs.Connectivity_45testCode.GDNewTextObjects1.length ;i < len;++i) {
-    gdjs.Connectivity_45testCode.GDNewTextObjects1[i].getBehavior("Text").setText(gdjs.evtTools.p2p.getEventData("Get-info-response"));
+{gdjs.evtTools.p2p.connect(gdjs.evtsExt__URLTools__URLQueryStringParameter.func(runtimeScene, gdjs.evtsExt__URLTools__CurrentURL.func(runtimeScene, null), "id", null));
 }
 }
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+{isConditionTrue_0 = (runtimeScene.getScene().getVariables().getFromIndex(3).getAsString() == "ok");
+}
+if (isConditionTrue_0) {
+gdjs.copyArray(runtimeScene.getObjects("Status2"), gdjs.ConnectarCode.GDStatus2Objects1);
+{for(var i = 0, len = gdjs.ConnectarCode.GDStatus2Objects1.length ;i < len;++i) {
+    gdjs.ConnectarCode.GDStatus2Objects1[i].getBehavior("Animation").setAnimationName("sucess");
+}
+}
+}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+{isConditionTrue_0 = (runtimeScene.getScene().getVariables().getFromIndex(3).getAsString() != "ok");
+}
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+{isConditionTrue_0 = (runtimeScene.getScene().getVariables().getFromIndex(3).getAsString() != "");
+}
+}
+if (isConditionTrue_0) {
+gdjs.copyArray(runtimeScene.getObjects("Status2"), gdjs.ConnectarCode.GDStatus2Objects1);
+{for(var i = 0, len = gdjs.ConnectarCode.GDStatus2Objects1.length ;i < len;++i) {
+    gdjs.ConnectarCode.GDStatus2Objects1[i].getBehavior("Animation").setAnimationName("error");
+}
+}
+}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+{
 }
 
 }
@@ -138,43 +484,81 @@ gdjs.copyArray(runtimeScene.getObjects("NewText"), gdjs.Connectivity_45testCode.
 
 };
 
-gdjs.Connectivity_45testCode.func = function(runtimeScene) {
+gdjs.ConnectarCode.func = function(runtimeScene) {
 runtimeScene.getOnceTriggers().startNewFrame();
 
-gdjs.Connectivity_45testCode.GDUIDObjects1.length = 0;
-gdjs.Connectivity_45testCode.GDUIDObjects2.length = 0;
-gdjs.Connectivity_45testCode.GDUID_9595homelabObjects1.length = 0;
-gdjs.Connectivity_45testCode.GDUID_9595homelabObjects2.length = 0;
-gdjs.Connectivity_45testCode.GDNewTextObjects1.length = 0;
-gdjs.Connectivity_45testCode.GDNewTextObjects2.length = 0;
-gdjs.Connectivity_45testCode.GDHomeObjects1.length = 0;
-gdjs.Connectivity_45testCode.GDHomeObjects2.length = 0;
-gdjs.Connectivity_45testCode.GDUser_9595iconObjects1.length = 0;
-gdjs.Connectivity_45testCode.GDUser_9595iconObjects2.length = 0;
-gdjs.Connectivity_45testCode.GDAppsObjects1.length = 0;
-gdjs.Connectivity_45testCode.GDAppsObjects2.length = 0;
-gdjs.Connectivity_45testCode.GDSettingsObjects1.length = 0;
-gdjs.Connectivity_45testCode.GDSettingsObjects2.length = 0;
+gdjs.ConnectarCode.GDUUIDObjects1.length = 0;
+gdjs.ConnectarCode.GDUUIDObjects2.length = 0;
+gdjs.ConnectarCode.GDUUIDObjects3.length = 0;
+gdjs.ConnectarCode.GDConnectedObjects1.length = 0;
+gdjs.ConnectarCode.GDConnectedObjects2.length = 0;
+gdjs.ConnectarCode.GDConnectedObjects3.length = 0;
+gdjs.ConnectarCode.GDStatusObjects1.length = 0;
+gdjs.ConnectarCode.GDStatusObjects2.length = 0;
+gdjs.ConnectarCode.GDStatusObjects3.length = 0;
+gdjs.ConnectarCode.GDNextObjects1.length = 0;
+gdjs.ConnectarCode.GDNextObjects2.length = 0;
+gdjs.ConnectarCode.GDNextObjects3.length = 0;
+gdjs.ConnectarCode.GDTitleObjects1.length = 0;
+gdjs.ConnectarCode.GDTitleObjects2.length = 0;
+gdjs.ConnectarCode.GDTitleObjects3.length = 0;
+gdjs.ConnectarCode.GDStatus2Objects1.length = 0;
+gdjs.ConnectarCode.GDStatus2Objects2.length = 0;
+gdjs.ConnectarCode.GDStatus2Objects3.length = 0;
+gdjs.ConnectarCode.GDHomeObjects1.length = 0;
+gdjs.ConnectarCode.GDHomeObjects2.length = 0;
+gdjs.ConnectarCode.GDHomeObjects3.length = 0;
+gdjs.ConnectarCode.GDUser_9595iconObjects1.length = 0;
+gdjs.ConnectarCode.GDUser_9595iconObjects2.length = 0;
+gdjs.ConnectarCode.GDUser_9595iconObjects3.length = 0;
+gdjs.ConnectarCode.GDAppsObjects1.length = 0;
+gdjs.ConnectarCode.GDAppsObjects2.length = 0;
+gdjs.ConnectarCode.GDAppsObjects3.length = 0;
+gdjs.ConnectarCode.GDSettingsObjects1.length = 0;
+gdjs.ConnectarCode.GDSettingsObjects2.length = 0;
+gdjs.ConnectarCode.GDSettingsObjects3.length = 0;
+gdjs.ConnectarCode.GDFilesObjects1.length = 0;
+gdjs.ConnectarCode.GDFilesObjects2.length = 0;
+gdjs.ConnectarCode.GDFilesObjects3.length = 0;
 
-gdjs.Connectivity_45testCode.eventsList1(runtimeScene);
-gdjs.Connectivity_45testCode.GDUIDObjects1.length = 0;
-gdjs.Connectivity_45testCode.GDUIDObjects2.length = 0;
-gdjs.Connectivity_45testCode.GDUID_9595homelabObjects1.length = 0;
-gdjs.Connectivity_45testCode.GDUID_9595homelabObjects2.length = 0;
-gdjs.Connectivity_45testCode.GDNewTextObjects1.length = 0;
-gdjs.Connectivity_45testCode.GDNewTextObjects2.length = 0;
-gdjs.Connectivity_45testCode.GDHomeObjects1.length = 0;
-gdjs.Connectivity_45testCode.GDHomeObjects2.length = 0;
-gdjs.Connectivity_45testCode.GDUser_9595iconObjects1.length = 0;
-gdjs.Connectivity_45testCode.GDUser_9595iconObjects2.length = 0;
-gdjs.Connectivity_45testCode.GDAppsObjects1.length = 0;
-gdjs.Connectivity_45testCode.GDAppsObjects2.length = 0;
-gdjs.Connectivity_45testCode.GDSettingsObjects1.length = 0;
-gdjs.Connectivity_45testCode.GDSettingsObjects2.length = 0;
+gdjs.ConnectarCode.eventsList4(runtimeScene);
+gdjs.ConnectarCode.GDUUIDObjects1.length = 0;
+gdjs.ConnectarCode.GDUUIDObjects2.length = 0;
+gdjs.ConnectarCode.GDUUIDObjects3.length = 0;
+gdjs.ConnectarCode.GDConnectedObjects1.length = 0;
+gdjs.ConnectarCode.GDConnectedObjects2.length = 0;
+gdjs.ConnectarCode.GDConnectedObjects3.length = 0;
+gdjs.ConnectarCode.GDStatusObjects1.length = 0;
+gdjs.ConnectarCode.GDStatusObjects2.length = 0;
+gdjs.ConnectarCode.GDStatusObjects3.length = 0;
+gdjs.ConnectarCode.GDNextObjects1.length = 0;
+gdjs.ConnectarCode.GDNextObjects2.length = 0;
+gdjs.ConnectarCode.GDNextObjects3.length = 0;
+gdjs.ConnectarCode.GDTitleObjects1.length = 0;
+gdjs.ConnectarCode.GDTitleObjects2.length = 0;
+gdjs.ConnectarCode.GDTitleObjects3.length = 0;
+gdjs.ConnectarCode.GDStatus2Objects1.length = 0;
+gdjs.ConnectarCode.GDStatus2Objects2.length = 0;
+gdjs.ConnectarCode.GDStatus2Objects3.length = 0;
+gdjs.ConnectarCode.GDHomeObjects1.length = 0;
+gdjs.ConnectarCode.GDHomeObjects2.length = 0;
+gdjs.ConnectarCode.GDHomeObjects3.length = 0;
+gdjs.ConnectarCode.GDUser_9595iconObjects1.length = 0;
+gdjs.ConnectarCode.GDUser_9595iconObjects2.length = 0;
+gdjs.ConnectarCode.GDUser_9595iconObjects3.length = 0;
+gdjs.ConnectarCode.GDAppsObjects1.length = 0;
+gdjs.ConnectarCode.GDAppsObjects2.length = 0;
+gdjs.ConnectarCode.GDAppsObjects3.length = 0;
+gdjs.ConnectarCode.GDSettingsObjects1.length = 0;
+gdjs.ConnectarCode.GDSettingsObjects2.length = 0;
+gdjs.ConnectarCode.GDSettingsObjects3.length = 0;
+gdjs.ConnectarCode.GDFilesObjects1.length = 0;
+gdjs.ConnectarCode.GDFilesObjects2.length = 0;
+gdjs.ConnectarCode.GDFilesObjects3.length = 0;
 
 
 return;
 
 }
 
-gdjs['Connectivity_45testCode'] = gdjs.Connectivity_45testCode;
+gdjs['ConnectarCode'] = gdjs.ConnectarCode;

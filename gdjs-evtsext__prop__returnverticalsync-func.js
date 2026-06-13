@@ -9,7 +9,7 @@ gdjs.evtsExt__Prop__ReturnVerticalSync = {};
 gdjs.evtsExt__Prop__ReturnVerticalSync.idToCallbackMap = new Map();
 
 
-gdjs.evtsExt__Prop__ReturnVerticalSync.userFunc0xa56ad8 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__Prop__ReturnVerticalSync.userFunc0x9e6b60 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
 "use strict";
 eventsFunctionContext.returnValue = runtimeScene.getGame().getGameData().properties.verticalSync;
 };
@@ -18,7 +18,7 @@ gdjs.evtsExt__Prop__ReturnVerticalSync.eventsList0 = function(runtimeScene, even
 {
 
 
-gdjs.evtsExt__Prop__ReturnVerticalSync.userFunc0xa56ad8(runtimeScene, eventsFunctionContext);
+gdjs.evtsExt__Prop__ReturnVerticalSync.userFunc0x9e6b60(runtimeScene, eventsFunctionContext);
 
 }
 
@@ -54,7 +54,9 @@ var eventsFunctionContext = {
         runtimeScene.createObject(objectsList.firstKey());
       if (object) {
         objectsList.get(objectsList.firstKey()).push(object);
-        eventsFunctionContext._objectArraysMap[objectName].push(object);
+        if (!(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName))) {
+          eventsFunctionContext._objectArraysMap[objectName].push(object);
+        }
       }
       return object;
     }

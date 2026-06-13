@@ -1,32 +1,32 @@
 
-if (typeof gdjs.evtsExt__PanelSpriteButton__IsInGameEdition !== "undefined") {
-  gdjs.evtsExt__PanelSpriteButton__IsInGameEdition.registeredGdjsCallbacks.forEach(callback =>
+if (typeof gdjs.evtsExt__URLTools__Reload !== "undefined") {
+  gdjs.evtsExt__URLTools__Reload.registeredGdjsCallbacks.forEach(callback =>
     gdjs._unregisterCallback(callback)
   );
 }
 
-gdjs.evtsExt__PanelSpriteButton__IsInGameEdition = {};
-gdjs.evtsExt__PanelSpriteButton__IsInGameEdition.idToCallbackMap = new Map();
+gdjs.evtsExt__URLTools__Reload = {};
+gdjs.evtsExt__URLTools__Reload.idToCallbackMap = new Map();
 
 
-gdjs.evtsExt__PanelSpriteButton__IsInGameEdition.userFunc0xb1ebc0 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__URLTools__Reload.userFunc0xad4618 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
 "use strict";
-const game = runtimeScene.getGame();
-eventsFunctionContext.returnValue = game.isInGameEdition && game.isInGameEdition();
+location.reload();
+
 };
-gdjs.evtsExt__PanelSpriteButton__IsInGameEdition.eventsList0 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__URLTools__Reload.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
-gdjs.evtsExt__PanelSpriteButton__IsInGameEdition.userFunc0xb1ebc0(runtimeScene, eventsFunctionContext);
+gdjs.evtsExt__URLTools__Reload.userFunc0xad4618(runtimeScene, eventsFunctionContext);
 
 }
 
 
 };
 
-gdjs.evtsExt__PanelSpriteButton__IsInGameEdition.func = function(runtimeScene, parentEventsFunctionContext) {
+gdjs.evtsExt__URLTools__Reload.func = function(runtimeScene, parentEventsFunctionContext) {
 let scopeInstanceContainer = null;
 var eventsFunctionContext = {
   _objectsMap: {
@@ -35,8 +35,8 @@ var eventsFunctionContext = {
 },
   _behaviorNamesMap: {
 },
-  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("PanelSpriteButton"),
-  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("PanelSpriteButton"),
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("URLTools"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("URLTools"),
   localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
@@ -84,10 +84,10 @@ parentEventsFunctionContext.getInstancesCountOnScene(objectName) :
 };
 
 
-gdjs.evtsExt__PanelSpriteButton__IsInGameEdition.eventsList0(runtimeScene, eventsFunctionContext);
+gdjs.evtsExt__URLTools__Reload.eventsList0(runtimeScene, eventsFunctionContext);
 
 
-return !!eventsFunctionContext.returnValue;
+return;
 }
 
-gdjs.evtsExt__PanelSpriteButton__IsInGameEdition.registeredGdjsCallbacks = [];
+gdjs.evtsExt__URLTools__Reload.registeredGdjsCallbacks = [];

@@ -61,15 +61,19 @@ gdjs.Create_47ConnectCode.GDSettingsObjects1= [];
 gdjs.Create_47ConnectCode.GDSettingsObjects2= [];
 gdjs.Create_47ConnectCode.GDSettingsObjects3= [];
 gdjs.Create_47ConnectCode.GDSettingsObjects4= [];
+gdjs.Create_47ConnectCode.GDFilesObjects1= [];
+gdjs.Create_47ConnectCode.GDFilesObjects2= [];
+gdjs.Create_47ConnectCode.GDFilesObjects3= [];
+gdjs.Create_47ConnectCode.GDFilesObjects4= [];
 
 
-gdjs.Create_47ConnectCode.asyncCallback13129252 = function (runtimeScene, asyncObjectsList) {
+gdjs.Create_47ConnectCode.asyncCallback13155524 = function (runtimeScene, asyncObjectsList) {
 asyncObjectsList.restoreLocalVariablesContainers(gdjs.Create_47ConnectCode.localVariables);
 {gdjs.evtTools.p2p.sendDataToAll("Connect", gdjs.evtTools.network.variableStructureToJSON(runtimeScene.getScene().getVariables().getFromIndex(0)));
 }
 gdjs.Create_47ConnectCode.localVariables.length = 0;
 }
-gdjs.Create_47ConnectCode.idToCallbackMap.set(13129252, gdjs.Create_47ConnectCode.asyncCallback13129252);
+gdjs.Create_47ConnectCode.idToCallbackMap.set(13155524, gdjs.Create_47ConnectCode.asyncCallback13155524);
 gdjs.Create_47ConnectCode.eventsList0 = function(runtimeScene) {
 
 {
@@ -79,7 +83,7 @@ gdjs.Create_47ConnectCode.eventsList0 = function(runtimeScene) {
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
 asyncObjectsList.backupLocalVariablesContainers(gdjs.Create_47ConnectCode.localVariables);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(0.1), (runtimeScene) => (gdjs.Create_47ConnectCode.asyncCallback13129252(runtimeScene, asyncObjectsList)), 13129252, asyncObjectsList);
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(0.1), (runtimeScene) => (gdjs.Create_47ConnectCode.asyncCallback13155524(runtimeScene, asyncObjectsList)), 13155524, asyncObjectsList);
 }
 }
 
@@ -583,6 +587,10 @@ gdjs.Create_47ConnectCode.GDSettingsObjects1.length = 0;
 gdjs.Create_47ConnectCode.GDSettingsObjects2.length = 0;
 gdjs.Create_47ConnectCode.GDSettingsObjects3.length = 0;
 gdjs.Create_47ConnectCode.GDSettingsObjects4.length = 0;
+gdjs.Create_47ConnectCode.GDFilesObjects1.length = 0;
+gdjs.Create_47ConnectCode.GDFilesObjects2.length = 0;
+gdjs.Create_47ConnectCode.GDFilesObjects3.length = 0;
+gdjs.Create_47ConnectCode.GDFilesObjects4.length = 0;
 
 gdjs.Create_47ConnectCode.eventsList4(runtimeScene);
 gdjs.Create_47ConnectCode.GDTitleObjects1.length = 0;
@@ -645,6 +653,10 @@ gdjs.Create_47ConnectCode.GDSettingsObjects1.length = 0;
 gdjs.Create_47ConnectCode.GDSettingsObjects2.length = 0;
 gdjs.Create_47ConnectCode.GDSettingsObjects3.length = 0;
 gdjs.Create_47ConnectCode.GDSettingsObjects4.length = 0;
+gdjs.Create_47ConnectCode.GDFilesObjects1.length = 0;
+gdjs.Create_47ConnectCode.GDFilesObjects2.length = 0;
+gdjs.Create_47ConnectCode.GDFilesObjects3.length = 0;
+gdjs.Create_47ConnectCode.GDFilesObjects4.length = 0;
 
 
 return;

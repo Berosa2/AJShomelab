@@ -9,7 +9,7 @@ gdjs.evtsExt__Prop__ReturnWindowHeight = {};
 gdjs.evtsExt__Prop__ReturnWindowHeight.idToCallbackMap = new Map();
 
 
-gdjs.evtsExt__Prop__ReturnWindowHeight.userFunc0xa56ad8 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__Prop__ReturnWindowHeight.userFunc0x93bb40 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
 "use strict";
 eventsFunctionContext.returnValue = runtimeScene.getGame().getGameData().properties.windowHeight;
 };
@@ -18,7 +18,7 @@ gdjs.evtsExt__Prop__ReturnWindowHeight.eventsList0 = function(runtimeScene, even
 {
 
 
-gdjs.evtsExt__Prop__ReturnWindowHeight.userFunc0xa56ad8(runtimeScene, eventsFunctionContext);
+gdjs.evtsExt__Prop__ReturnWindowHeight.userFunc0x93bb40(runtimeScene, eventsFunctionContext);
 
 }
 
@@ -54,7 +54,9 @@ var eventsFunctionContext = {
         runtimeScene.createObject(objectsList.firstKey());
       if (object) {
         objectsList.get(objectsList.firstKey()).push(object);
-        eventsFunctionContext._objectArraysMap[objectName].push(object);
+        if (!(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName))) {
+          eventsFunctionContext._objectArraysMap[objectName].push(object);
+        }
       }
       return object;
     }
