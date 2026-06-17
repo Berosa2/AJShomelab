@@ -1,193 +1,64 @@
-gdjs.Create_47ConnectCode = {};
-gdjs.Create_47ConnectCode.localVariables = [];
-gdjs.Create_47ConnectCode.idToCallbackMap = new Map();
-gdjs.Create_47ConnectCode.GDTitleObjects1= [];
-gdjs.Create_47ConnectCode.GDTitleObjects2= [];
-gdjs.Create_47ConnectCode.GDTitleObjects3= [];
-gdjs.Create_47ConnectCode.GDTitleObjects4= [];
-gdjs.Create_47ConnectCode.GDNomeObjects1= [];
-gdjs.Create_47ConnectCode.GDNomeObjects2= [];
-gdjs.Create_47ConnectCode.GDNomeObjects3= [];
-gdjs.Create_47ConnectCode.GDNomeObjects4= [];
-gdjs.Create_47ConnectCode.GDSenhaObjects1= [];
-gdjs.Create_47ConnectCode.GDSenhaObjects2= [];
-gdjs.Create_47ConnectCode.GDSenhaObjects3= [];
-gdjs.Create_47ConnectCode.GDSenhaObjects4= [];
-gdjs.Create_47ConnectCode.GDEmailObjects1= [];
-gdjs.Create_47ConnectCode.GDEmailObjects2= [];
-gdjs.Create_47ConnectCode.GDEmailObjects3= [];
-gdjs.Create_47ConnectCode.GDEmailObjects4= [];
-gdjs.Create_47ConnectCode.GDTelephoneObjects1= [];
-gdjs.Create_47ConnectCode.GDTelephoneObjects2= [];
-gdjs.Create_47ConnectCode.GDTelephoneObjects3= [];
-gdjs.Create_47ConnectCode.GDTelephoneObjects4= [];
-gdjs.Create_47ConnectCode.GDIdadeObjects1= [];
-gdjs.Create_47ConnectCode.GDIdadeObjects2= [];
-gdjs.Create_47ConnectCode.GDIdadeObjects3= [];
-gdjs.Create_47ConnectCode.GDIdadeObjects4= [];
-gdjs.Create_47ConnectCode.GDCreateObjects1= [];
-gdjs.Create_47ConnectCode.GDCreateObjects2= [];
-gdjs.Create_47ConnectCode.GDCreateObjects3= [];
-gdjs.Create_47ConnectCode.GDCreateObjects4= [];
-gdjs.Create_47ConnectCode.GDLogObjects1= [];
-gdjs.Create_47ConnectCode.GDLogObjects2= [];
-gdjs.Create_47ConnectCode.GDLogObjects3= [];
-gdjs.Create_47ConnectCode.GDLogObjects4= [];
-gdjs.Create_47ConnectCode.GDNextObjects1= [];
-gdjs.Create_47ConnectCode.GDNextObjects2= [];
-gdjs.Create_47ConnectCode.GDNextObjects3= [];
-gdjs.Create_47ConnectCode.GDNextObjects4= [];
-gdjs.Create_47ConnectCode.GDConnectObjects1= [];
-gdjs.Create_47ConnectCode.GDConnectObjects2= [];
-gdjs.Create_47ConnectCode.GDConnectObjects3= [];
-gdjs.Create_47ConnectCode.GDConnectObjects4= [];
-gdjs.Create_47ConnectCode.GDVoltadoObjects1= [];
-gdjs.Create_47ConnectCode.GDVoltadoObjects2= [];
-gdjs.Create_47ConnectCode.GDVoltadoObjects3= [];
-gdjs.Create_47ConnectCode.GDVoltadoObjects4= [];
-gdjs.Create_47ConnectCode.GDHomeObjects1= [];
-gdjs.Create_47ConnectCode.GDHomeObjects2= [];
-gdjs.Create_47ConnectCode.GDHomeObjects3= [];
-gdjs.Create_47ConnectCode.GDHomeObjects4= [];
-gdjs.Create_47ConnectCode.GDUser_9595iconObjects1= [];
-gdjs.Create_47ConnectCode.GDUser_9595iconObjects2= [];
-gdjs.Create_47ConnectCode.GDUser_9595iconObjects3= [];
-gdjs.Create_47ConnectCode.GDUser_9595iconObjects4= [];
-gdjs.Create_47ConnectCode.GDAppsObjects1= [];
-gdjs.Create_47ConnectCode.GDAppsObjects2= [];
-gdjs.Create_47ConnectCode.GDAppsObjects3= [];
-gdjs.Create_47ConnectCode.GDAppsObjects4= [];
-gdjs.Create_47ConnectCode.GDSettingsObjects1= [];
-gdjs.Create_47ConnectCode.GDSettingsObjects2= [];
-gdjs.Create_47ConnectCode.GDSettingsObjects3= [];
-gdjs.Create_47ConnectCode.GDSettingsObjects4= [];
-gdjs.Create_47ConnectCode.GDFilesObjects1= [];
-gdjs.Create_47ConnectCode.GDFilesObjects2= [];
-gdjs.Create_47ConnectCode.GDFilesObjects3= [];
-gdjs.Create_47ConnectCode.GDFilesObjects4= [];
+gdjs.login_95screenCode = {};
+gdjs.login_95screenCode.localVariables = [];
+gdjs.login_95screenCode.idToCallbackMap = new Map();
+gdjs.login_95screenCode.GDBackgroundObjects1= [];
+gdjs.login_95screenCode.GDBackgroundObjects2= [];
+gdjs.login_95screenCode.GDlogoObjects1= [];
+gdjs.login_95screenCode.GDlogoObjects2= [];
+gdjs.login_95screenCode.GDASCObjects1= [];
+gdjs.login_95screenCode.GDASCObjects2= [];
+gdjs.login_95screenCode.GDLogin_95952PointsObjects1= [];
+gdjs.login_95screenCode.GDLogin_95952PointsObjects2= [];
+gdjs.login_95screenCode.GDSenha_95952PointsObjects1= [];
+gdjs.login_95screenCode.GDSenha_95952PointsObjects2= [];
+gdjs.login_95screenCode.GDDuvidasObjects1= [];
+gdjs.login_95screenCode.GDDuvidasObjects2= [];
+gdjs.login_95screenCode.GDEntrarObjects1= [];
+gdjs.login_95screenCode.GDEntrarObjects2= [];
+gdjs.login_95screenCode.GDLoginObjects1= [];
+gdjs.login_95screenCode.GDLoginObjects2= [];
+gdjs.login_95screenCode.GDSenhaObjects1= [];
+gdjs.login_95screenCode.GDSenhaObjects2= [];
+gdjs.login_95screenCode.GDlogo_9595pessoalObjects1= [];
+gdjs.login_95screenCode.GDlogo_9595pessoalObjects2= [];
+gdjs.login_95screenCode.GDUUIDObjects1= [];
+gdjs.login_95screenCode.GDUUIDObjects2= [];
+gdjs.login_95screenCode.GDerrorObjects1= [];
+gdjs.login_95screenCode.GDerrorObjects2= [];
 
 
-gdjs.Create_47ConnectCode.asyncCallback13155524 = function (runtimeScene, asyncObjectsList) {
-asyncObjectsList.restoreLocalVariablesContainers(gdjs.Create_47ConnectCode.localVariables);
-{gdjs.evtTools.p2p.sendDataToAll("Connect", gdjs.evtTools.network.variableStructureToJSON(runtimeScene.getScene().getVariables().getFromIndex(0)));
-}
-gdjs.Create_47ConnectCode.localVariables.length = 0;
-}
-gdjs.Create_47ConnectCode.idToCallbackMap.set(13155524, gdjs.Create_47ConnectCode.asyncCallback13155524);
-gdjs.Create_47ConnectCode.eventsList0 = function(runtimeScene) {
+gdjs.login_95screenCode.eventsList0 = function(runtimeScene) {
 
 {
 
-
-{
-{
-const asyncObjectsList = new gdjs.LongLivedObjectsList();
-asyncObjectsList.backupLocalVariablesContainers(gdjs.Create_47ConnectCode.localVariables);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(0.1), (runtimeScene) => (gdjs.Create_47ConnectCode.asyncCallback13155524(runtimeScene, asyncObjectsList)), 13155524, asyncObjectsList);
-}
-}
-
-}
-
-
-};gdjs.Create_47ConnectCode.eventsList1 = function(runtimeScene) {
-
-{
-
-gdjs.copyArray(runtimeScene.getObjects("Nome"), gdjs.Create_47ConnectCode.GDNomeObjects3);
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-for (var i = 0, k = 0, l = gdjs.Create_47ConnectCode.GDNomeObjects3.length;i<l;++i) {
-    if ( gdjs.Create_47ConnectCode.GDNomeObjects3[i].isOnLayer("Create") ) {
-        isConditionTrue_0 = true;
-        gdjs.Create_47ConnectCode.GDNomeObjects3[k] = gdjs.Create_47ConnectCode.GDNomeObjects3[i];
-        ++k;
-    }
+{isConditionTrue_0 = (runtimeScene.getScene().getVariables().getFromIndex(0).getChild("Error-code").getAsNumber() == 200);
 }
-gdjs.Create_47ConnectCode.GDNomeObjects3.length = k;
 if (isConditionTrue_0) {
-/* Reuse gdjs.Create_47ConnectCode.GDNomeObjects3 */
-{for(var i = 0, len = gdjs.Create_47ConnectCode.GDNomeObjects3.length ;i < len;++i) {
-    gdjs.Create_47ConnectCode.GDNomeObjects3[i].deleteFromScene(runtimeScene);
+gdjs.copyArray(runtimeScene.getObjects("Login"), gdjs.login_95screenCode.GDLoginObjects1);
+{runtimeScene.getGame().getVariables().getFromIndex(1).setString((( gdjs.login_95screenCode.GDLoginObjects1.length === 0 ) ? "" :gdjs.login_95screenCode.GDLoginObjects1[0].getBehavior("Text").getText()));
 }
+{runtimeScene.getGame().getVariables().getFromIndex(2).setString(runtimeScene.getScene().getVariables().getFromIndex(0).getChild("Role").getAsString());
+}
+{gdjs.evtTools.runtimeScene.pushScene(runtimeScene, "main_screen");
 }
 }
 
 }
 
+
+};gdjs.login_95screenCode.eventsList1 = function(runtimeScene) {
 
 {
 
-gdjs.copyArray(runtimeScene.getObjects("Senha"), gdjs.Create_47ConnectCode.GDSenhaObjects2);
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-for (var i = 0, k = 0, l = gdjs.Create_47ConnectCode.GDSenhaObjects2.length;i<l;++i) {
-    if ( gdjs.Create_47ConnectCode.GDSenhaObjects2[i].isOnLayer("Create") ) {
-        isConditionTrue_0 = true;
-        gdjs.Create_47ConnectCode.GDSenhaObjects2[k] = gdjs.Create_47ConnectCode.GDSenhaObjects2[i];
-        ++k;
-    }
-}
-gdjs.Create_47ConnectCode.GDSenhaObjects2.length = k;
+isConditionTrue_0 = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
 if (isConditionTrue_0) {
-/* Reuse gdjs.Create_47ConnectCode.GDSenhaObjects2 */
-{for(var i = 0, len = gdjs.Create_47ConnectCode.GDSenhaObjects2.length ;i < len;++i) {
-    gdjs.Create_47ConnectCode.GDSenhaObjects2[i].deleteFromScene(runtimeScene);
-}
-}
-}
-
-}
-
-
-};gdjs.Create_47ConnectCode.eventsList2 = function(runtimeScene) {
-
-{
-
-gdjs.copyArray(runtimeScene.getObjects("Nome"), gdjs.Create_47ConnectCode.GDNomeObjects2);
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-for (var i = 0, k = 0, l = gdjs.Create_47ConnectCode.GDNomeObjects2.length;i<l;++i) {
-    if ( gdjs.Create_47ConnectCode.GDNomeObjects2[i].isOnLayer("Connect") ) {
-        isConditionTrue_0 = true;
-        gdjs.Create_47ConnectCode.GDNomeObjects2[k] = gdjs.Create_47ConnectCode.GDNomeObjects2[i];
-        ++k;
-    }
-}
-gdjs.Create_47ConnectCode.GDNomeObjects2.length = k;
-if (isConditionTrue_0) {
-/* Reuse gdjs.Create_47ConnectCode.GDNomeObjects2 */
-{for(var i = 0, len = gdjs.Create_47ConnectCode.GDNomeObjects2.length ;i < len;++i) {
-    gdjs.Create_47ConnectCode.GDNomeObjects2[i].deleteFromScene(runtimeScene);
-}
-}
-}
-
-}
-
-
-{
-
-gdjs.copyArray(runtimeScene.getObjects("Senha"), gdjs.Create_47ConnectCode.GDSenhaObjects2);
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-for (var i = 0, k = 0, l = gdjs.Create_47ConnectCode.GDSenhaObjects2.length;i<l;++i) {
-    if ( gdjs.Create_47ConnectCode.GDSenhaObjects2[i].isOnLayer("Connect") ) {
-        isConditionTrue_0 = true;
-        gdjs.Create_47ConnectCode.GDSenhaObjects2[k] = gdjs.Create_47ConnectCode.GDSenhaObjects2[i];
-        ++k;
-    }
-}
-gdjs.Create_47ConnectCode.GDSenhaObjects2.length = k;
-if (isConditionTrue_0) {
-/* Reuse gdjs.Create_47ConnectCode.GDSenhaObjects2 */
-{for(var i = 0, len = gdjs.Create_47ConnectCode.GDSenhaObjects2.length ;i < len;++i) {
-    gdjs.Create_47ConnectCode.GDSenhaObjects2[i].deleteFromScene(runtimeScene);
-}
+{gdjs.evtTools.p2p.useDefaultBrokerServer();
 }
 }
 
@@ -198,147 +69,10 @@ if (isConditionTrue_0) {
 
 
 let isConditionTrue_0 = false;
-{
-}
-
-}
-
-
-};gdjs.Create_47ConnectCode.eventsList3 = function(runtimeScene) {
-
-{
-
-
-let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = (runtimeScene.getScene().getVariables().getFromIndex(1).getAsNumber() > 0);
-}
+isConditionTrue_0 = gdjs.evtTools.p2p.onEvent("Connect-sucess", false);
 if (isConditionTrue_0) {
-{gdjs.evtTools.camera.showLayer(runtimeScene, "Connect");
-}
-
-{ //Subevents
-gdjs.Create_47ConnectCode.eventsList1(runtimeScene);} //End of subevents
-}
-
-}
-
-
-{
-
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-{isConditionTrue_0 = (runtimeScene.getScene().getVariables().getFromIndex(1).getAsNumber() == 0);
-}
-if (isConditionTrue_0) {
-{gdjs.evtTools.camera.showLayer(runtimeScene, "Create");
-}
-
-{ //Subevents
-gdjs.Create_47ConnectCode.eventsList2(runtimeScene);} //End of subevents
-}
-
-}
-
-
-};gdjs.Create_47ConnectCode.eventsList4 = function(runtimeScene) {
-
-{
-
-gdjs.copyArray(runtimeScene.getObjects("Create"), gdjs.Create_47ConnectCode.GDCreateObjects1);
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-for (var i = 0, k = 0, l = gdjs.Create_47ConnectCode.GDCreateObjects1.length;i<l;++i) {
-    if ( gdjs.Create_47ConnectCode.GDCreateObjects1[i].IsClicked(null) ) {
-        isConditionTrue_0 = true;
-        gdjs.Create_47ConnectCode.GDCreateObjects1[k] = gdjs.Create_47ConnectCode.GDCreateObjects1[i];
-        ++k;
-    }
-}
-gdjs.Create_47ConnectCode.GDCreateObjects1.length = k;
-if (isConditionTrue_0) {
-isConditionTrue_0 = false;
-for (var i = 0, k = 0, l = gdjs.Create_47ConnectCode.GDCreateObjects1.length;i<l;++i) {
-    if ( gdjs.Create_47ConnectCode.GDCreateObjects1[i].isVisible() ) {
-        isConditionTrue_0 = true;
-        gdjs.Create_47ConnectCode.GDCreateObjects1[k] = gdjs.Create_47ConnectCode.GDCreateObjects1[i];
-        ++k;
-    }
-}
-gdjs.Create_47ConnectCode.GDCreateObjects1.length = k;
-}
-if (isConditionTrue_0) {
-gdjs.copyArray(runtimeScene.getObjects("Email"), gdjs.Create_47ConnectCode.GDEmailObjects1);
-gdjs.copyArray(runtimeScene.getObjects("Nome"), gdjs.Create_47ConnectCode.GDNomeObjects1);
-gdjs.copyArray(runtimeScene.getObjects("Senha"), gdjs.Create_47ConnectCode.GDSenhaObjects1);
-{runtimeScene.getScene().getVariables().getFromIndex(0).getChild("email").setString((( gdjs.Create_47ConnectCode.GDEmailObjects1.length === 0 ) ? "" :gdjs.Create_47ConnectCode.GDEmailObjects1[0].getBehavior("Text").getText()));
-}
-{runtimeScene.getScene().getVariables().getFromIndex(0).getChild("password").setString((( gdjs.Create_47ConnectCode.GDSenhaObjects1.length === 0 ) ? "" :gdjs.Create_47ConnectCode.GDSenhaObjects1[0].getBehavior("Text").getText()));
-}
-{runtimeScene.getScene().getVariables().getFromIndex(0).getChild("name").setString((( gdjs.Create_47ConnectCode.GDNomeObjects1.length === 0 ) ? "" :gdjs.Create_47ConnectCode.GDNomeObjects1[0].getBehavior("Text").getText()));
-}
-{gdjs.evtTools.p2p.sendDataToAll("Create-accont", gdjs.evtTools.network.variableStructureToJSON(runtimeScene.getScene().getVariables().getFromIndex(0)));
-}
-}
-
-}
-
-
-{
-
-gdjs.copyArray(runtimeScene.getObjects("Connect"), gdjs.Create_47ConnectCode.GDConnectObjects1);
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-for (var i = 0, k = 0, l = gdjs.Create_47ConnectCode.GDConnectObjects1.length;i<l;++i) {
-    if ( gdjs.Create_47ConnectCode.GDConnectObjects1[i].IsClicked(null) ) {
-        isConditionTrue_0 = true;
-        gdjs.Create_47ConnectCode.GDConnectObjects1[k] = gdjs.Create_47ConnectCode.GDConnectObjects1[i];
-        ++k;
-    }
-}
-gdjs.Create_47ConnectCode.GDConnectObjects1.length = k;
-if (isConditionTrue_0) {
-isConditionTrue_0 = false;
-for (var i = 0, k = 0, l = gdjs.Create_47ConnectCode.GDConnectObjects1.length;i<l;++i) {
-    if ( gdjs.Create_47ConnectCode.GDConnectObjects1[i].isVisible() ) {
-        isConditionTrue_0 = true;
-        gdjs.Create_47ConnectCode.GDConnectObjects1[k] = gdjs.Create_47ConnectCode.GDConnectObjects1[i];
-        ++k;
-    }
-}
-gdjs.Create_47ConnectCode.GDConnectObjects1.length = k;
-}
-if (isConditionTrue_0) {
-gdjs.copyArray(runtimeScene.getObjects("Nome"), gdjs.Create_47ConnectCode.GDNomeObjects1);
-gdjs.copyArray(runtimeScene.getObjects("Senha"), gdjs.Create_47ConnectCode.GDSenhaObjects1);
-{runtimeScene.getScene().getVariables().getFromIndex(0).getChild("password").setString((( gdjs.Create_47ConnectCode.GDSenhaObjects1.length === 0 ) ? "" :gdjs.Create_47ConnectCode.GDSenhaObjects1[0].getBehavior("Text").getText()));
-}
-{runtimeScene.getScene().getVariables().getFromIndex(0).getChild("name").setString((( gdjs.Create_47ConnectCode.GDNomeObjects1.length === 0 ) ? "" :gdjs.Create_47ConnectCode.GDNomeObjects1[0].getBehavior("Text").getText()));
-}
-
-{ //Subevents
-gdjs.Create_47ConnectCode.eventsList0(runtimeScene);} //End of subevents
-}
-
-}
-
-
-{
-
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.p2p.onEvent("Create-sucess", false);
-if (isConditionTrue_0) {
-gdjs.copyArray(runtimeScene.getObjects("Log"), gdjs.Create_47ConnectCode.GDLogObjects1);
-{for(var i = 0, len = gdjs.Create_47ConnectCode.GDLogObjects1.length ;i < len;++i) {
-    gdjs.Create_47ConnectCode.GDLogObjects1[i].getBehavior("Text").setText(gdjs.evtTools.p2p.getEventData("Create-sucess"));
-}
-}
-{runtimeScene.getScene().getVariables().getFromIndex(2).setString(gdjs.evtTools.p2p.getEventData("Create-sucess"));
+{gdjs.evtTools.camera.showLayer(runtimeScene, "Login");
 }
 }
 
@@ -352,51 +86,11 @@ let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.p2p.onEvent("Status", false);
 if (isConditionTrue_0) {
-{runtimeScene.getScene().getVariables().getFromIndex(2).setString(gdjs.evtTools.p2p.getEventData("Status"));
-}
-{gdjs.evtTools.network.jsonToVariableStructure(runtimeScene.getScene().getVariables().getFromIndex(2).getAsString(), runtimeScene.getScene().getVariables().getFromIndex(3));
-}
-}
-
-}
-
-
-{
-
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
-if (isConditionTrue_0) {
-gdjs.copyArray(runtimeScene.getObjects("Next"), gdjs.Create_47ConnectCode.GDNextObjects1);
-{for(var i = 0, len = gdjs.Create_47ConnectCode.GDNextObjects1.length ;i < len;++i) {
-    gdjs.Create_47ConnectCode.GDNextObjects1[i].hide();
-}
-}
-{gdjs.evtTools.p2p.sendDataToAll("Check-users", "");
-}
-}
-
-}
-
-
-{
-
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.p2p.onEvent("Check-users-sucess", false);
-if (isConditionTrue_0) {
-gdjs.copyArray(runtimeScene.getObjects("Log"), gdjs.Create_47ConnectCode.GDLogObjects1);
-{runtimeScene.getScene().getVariables().getFromIndex(1).setNumber(gdjs.evtTools.common.toNumber(gdjs.evtTools.p2p.getEventData("Check-users-sucess")));
-}
-{for(var i = 0, len = gdjs.Create_47ConnectCode.GDLogObjects1.length ;i < len;++i) {
-    gdjs.Create_47ConnectCode.GDLogObjects1[i].getBehavior("Text").setText(gdjs.evtTools.p2p.getEventData("Check-users-sucess"));
-}
+{gdjs.evtTools.network.jsonToVariableStructure(gdjs.evtTools.p2p.getEventData("Status"), runtimeScene.getScene().getVariables().getFromIndex(0));
 }
 
 { //Subevents
-gdjs.Create_47ConnectCode.eventsList3(runtimeScene);} //End of subevents
+gdjs.login_95screenCode.eventsList0(runtimeScene);} //End of subevents
 }
 
 }
@@ -404,67 +98,54 @@ gdjs.Create_47ConnectCode.eventsList3(runtimeScene);} //End of subevents
 
 {
 
-gdjs.copyArray(runtimeScene.getObjects("Next"), gdjs.Create_47ConnectCode.GDNextObjects1);
+gdjs.copyArray(runtimeScene.getObjects("UUID"), gdjs.login_95screenCode.GDUUIDObjects1);
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-for (var i = 0, k = 0, l = gdjs.Create_47ConnectCode.GDNextObjects1.length;i<l;++i) {
-    if ( gdjs.Create_47ConnectCode.GDNextObjects1[i].IsClicked(null) ) {
+for (var i = 0, k = 0, l = gdjs.login_95screenCode.GDUUIDObjects1.length;i<l;++i) {
+    if ( gdjs.login_95screenCode.GDUUIDObjects1[i].isSubmitted() ) {
         isConditionTrue_0 = true;
-        gdjs.Create_47ConnectCode.GDNextObjects1[k] = gdjs.Create_47ConnectCode.GDNextObjects1[i];
+        gdjs.login_95screenCode.GDUUIDObjects1[k] = gdjs.login_95screenCode.GDUUIDObjects1[i];
         ++k;
     }
 }
-gdjs.Create_47ConnectCode.GDNextObjects1.length = k;
+gdjs.login_95screenCode.GDUUIDObjects1.length = k;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-for (var i = 0, k = 0, l = gdjs.Create_47ConnectCode.GDNextObjects1.length;i<l;++i) {
-    if ( gdjs.Create_47ConnectCode.GDNextObjects1[i].isVisible() ) {
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(15818948);
+}
+}
+if (isConditionTrue_0) {
+/* Reuse gdjs.login_95screenCode.GDUUIDObjects1 */
+{gdjs.evtTools.p2p.connect((( gdjs.login_95screenCode.GDUUIDObjects1.length === 0 ) ? "" :gdjs.login_95screenCode.GDUUIDObjects1[0].getBehavior("Text").getText()));
+}
+}
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("Entrar"), gdjs.login_95screenCode.GDEntrarObjects1);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.login_95screenCode.GDEntrarObjects1.length;i<l;++i) {
+    if ( gdjs.login_95screenCode.GDEntrarObjects1[i].getBehavior("ButtonFSM").IsClicked(null) ) {
         isConditionTrue_0 = true;
-        gdjs.Create_47ConnectCode.GDNextObjects1[k] = gdjs.Create_47ConnectCode.GDNextObjects1[i];
+        gdjs.login_95screenCode.GDEntrarObjects1[k] = gdjs.login_95screenCode.GDEntrarObjects1[i];
         ++k;
     }
 }
-gdjs.Create_47ConnectCode.GDNextObjects1.length = k;
-}
+gdjs.login_95screenCode.GDEntrarObjects1.length = k;
 if (isConditionTrue_0) {
-{gdjs.evtTools.runtimeScene.pushScene(runtimeScene, "Main");
+gdjs.copyArray(runtimeScene.getObjects("Login"), gdjs.login_95screenCode.GDLoginObjects1);
+gdjs.copyArray(runtimeScene.getObjects("Senha"), gdjs.login_95screenCode.GDSenhaObjects1);
+{runtimeScene.getGame().getVariables().getFromIndex(0).getChild("Login").getChild("name").setString((( gdjs.login_95screenCode.GDLoginObjects1.length === 0 ) ? "" :gdjs.login_95screenCode.GDLoginObjects1[0].getBehavior("Text").getText()));
 }
+{runtimeScene.getGame().getVariables().getFromIndex(0).getChild("Login").getChild("password").setString((( gdjs.login_95screenCode.GDSenhaObjects1.length === 0 ) ? "" :gdjs.login_95screenCode.GDSenhaObjects1[0].getBehavior("Text").getText()));
 }
-
-}
-
-
-{
-
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-{isConditionTrue_0 = (runtimeScene.getScene().getVariables().getFromIndex(3).getChild("Error-code").getAsString() == "200");
-}
-if (isConditionTrue_0) {
-gdjs.copyArray(runtimeScene.getObjects("Next"), gdjs.Create_47ConnectCode.GDNextObjects1);
-{for(var i = 0, len = gdjs.Create_47ConnectCode.GDNextObjects1.length ;i < len;++i) {
-    gdjs.Create_47ConnectCode.GDNextObjects1[i].hide(false);
-}
-}
-}
-
-}
-
-
-{
-
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-{isConditionTrue_0 = (runtimeScene.getScene().getVariables().getFromIndex(2).getAsString() == "200");
-}
-if (isConditionTrue_0) {
-gdjs.copyArray(runtimeScene.getObjects("Next"), gdjs.Create_47ConnectCode.GDNextObjects1);
-{for(var i = 0, len = gdjs.Create_47ConnectCode.GDNextObjects1.length ;i < len;++i) {
-    gdjs.Create_47ConnectCode.GDNextObjects1[i].hide(false);
-}
+{gdjs.evtTools.p2p.sendDataToAll("Connect", gdjs.evtTools.network.variableStructureToJSON(runtimeScene.getGame().getVariables().getFromIndex(0).getChild("Login")));
 }
 }
 
@@ -476,46 +157,10 @@ gdjs.copyArray(runtimeScene.getObjects("Next"), gdjs.Create_47ConnectCode.GDNext
 
 let isConditionTrue_0 = false;
 {
-gdjs.copyArray(runtimeScene.getObjects("Log"), gdjs.Create_47ConnectCode.GDLogObjects1);
-{for(var i = 0, len = gdjs.Create_47ConnectCode.GDLogObjects1.length ;i < len;++i) {
-    gdjs.Create_47ConnectCode.GDLogObjects1[i].getBehavior("Text").setText(gdjs.evtTools.network.variableStructureToJSON(runtimeScene.getScene().getVariables().getFromIndex(0)) + "\n" + runtimeScene.getScene().getVariables().getFromIndex(2).getAsString());
+gdjs.copyArray(runtimeScene.getObjects("error"), gdjs.login_95screenCode.GDerrorObjects1);
+{for(var i = 0, len = gdjs.login_95screenCode.GDerrorObjects1.length ;i < len;++i) {
+    gdjs.login_95screenCode.GDerrorObjects1[i].getBehavior("Text").setText(gdjs.evtTools.network.variableStructureToJSON(runtimeScene.getScene().getVariables().getFromIndex(0)));
 }
-}
-}
-
-}
-
-
-{
-
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.p2p.onError();
-if (isConditionTrue_0) {
-{gdjs.evtTools.runtimeScene.pushScene(runtimeScene, "Connectar");
-}
-}
-
-}
-
-
-{
-
-gdjs.copyArray(runtimeScene.getObjects("Voltado"), gdjs.Create_47ConnectCode.GDVoltadoObjects1);
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-for (var i = 0, k = 0, l = gdjs.Create_47ConnectCode.GDVoltadoObjects1.length;i<l;++i) {
-    if ( gdjs.Create_47ConnectCode.GDVoltadoObjects1[i].IsClicked(null) ) {
-        isConditionTrue_0 = true;
-        gdjs.Create_47ConnectCode.GDVoltadoObjects1[k] = gdjs.Create_47ConnectCode.GDVoltadoObjects1[i];
-        ++k;
-    }
-}
-gdjs.Create_47ConnectCode.GDVoltadoObjects1.length = k;
-if (isConditionTrue_0) {
-{gdjs.evtTools.runtimeScene.pushScene(runtimeScene, "Connectar");
 }
 }
 
@@ -524,143 +169,63 @@ if (isConditionTrue_0) {
 
 };
 
-gdjs.Create_47ConnectCode.func = function(runtimeScene) {
+gdjs.login_95screenCode.func = function(runtimeScene) {
 runtimeScene.getOnceTriggers().startNewFrame();
 
-gdjs.Create_47ConnectCode.GDTitleObjects1.length = 0;
-gdjs.Create_47ConnectCode.GDTitleObjects2.length = 0;
-gdjs.Create_47ConnectCode.GDTitleObjects3.length = 0;
-gdjs.Create_47ConnectCode.GDTitleObjects4.length = 0;
-gdjs.Create_47ConnectCode.GDNomeObjects1.length = 0;
-gdjs.Create_47ConnectCode.GDNomeObjects2.length = 0;
-gdjs.Create_47ConnectCode.GDNomeObjects3.length = 0;
-gdjs.Create_47ConnectCode.GDNomeObjects4.length = 0;
-gdjs.Create_47ConnectCode.GDSenhaObjects1.length = 0;
-gdjs.Create_47ConnectCode.GDSenhaObjects2.length = 0;
-gdjs.Create_47ConnectCode.GDSenhaObjects3.length = 0;
-gdjs.Create_47ConnectCode.GDSenhaObjects4.length = 0;
-gdjs.Create_47ConnectCode.GDEmailObjects1.length = 0;
-gdjs.Create_47ConnectCode.GDEmailObjects2.length = 0;
-gdjs.Create_47ConnectCode.GDEmailObjects3.length = 0;
-gdjs.Create_47ConnectCode.GDEmailObjects4.length = 0;
-gdjs.Create_47ConnectCode.GDTelephoneObjects1.length = 0;
-gdjs.Create_47ConnectCode.GDTelephoneObjects2.length = 0;
-gdjs.Create_47ConnectCode.GDTelephoneObjects3.length = 0;
-gdjs.Create_47ConnectCode.GDTelephoneObjects4.length = 0;
-gdjs.Create_47ConnectCode.GDIdadeObjects1.length = 0;
-gdjs.Create_47ConnectCode.GDIdadeObjects2.length = 0;
-gdjs.Create_47ConnectCode.GDIdadeObjects3.length = 0;
-gdjs.Create_47ConnectCode.GDIdadeObjects4.length = 0;
-gdjs.Create_47ConnectCode.GDCreateObjects1.length = 0;
-gdjs.Create_47ConnectCode.GDCreateObjects2.length = 0;
-gdjs.Create_47ConnectCode.GDCreateObjects3.length = 0;
-gdjs.Create_47ConnectCode.GDCreateObjects4.length = 0;
-gdjs.Create_47ConnectCode.GDLogObjects1.length = 0;
-gdjs.Create_47ConnectCode.GDLogObjects2.length = 0;
-gdjs.Create_47ConnectCode.GDLogObjects3.length = 0;
-gdjs.Create_47ConnectCode.GDLogObjects4.length = 0;
-gdjs.Create_47ConnectCode.GDNextObjects1.length = 0;
-gdjs.Create_47ConnectCode.GDNextObjects2.length = 0;
-gdjs.Create_47ConnectCode.GDNextObjects3.length = 0;
-gdjs.Create_47ConnectCode.GDNextObjects4.length = 0;
-gdjs.Create_47ConnectCode.GDConnectObjects1.length = 0;
-gdjs.Create_47ConnectCode.GDConnectObjects2.length = 0;
-gdjs.Create_47ConnectCode.GDConnectObjects3.length = 0;
-gdjs.Create_47ConnectCode.GDConnectObjects4.length = 0;
-gdjs.Create_47ConnectCode.GDVoltadoObjects1.length = 0;
-gdjs.Create_47ConnectCode.GDVoltadoObjects2.length = 0;
-gdjs.Create_47ConnectCode.GDVoltadoObjects3.length = 0;
-gdjs.Create_47ConnectCode.GDVoltadoObjects4.length = 0;
-gdjs.Create_47ConnectCode.GDHomeObjects1.length = 0;
-gdjs.Create_47ConnectCode.GDHomeObjects2.length = 0;
-gdjs.Create_47ConnectCode.GDHomeObjects3.length = 0;
-gdjs.Create_47ConnectCode.GDHomeObjects4.length = 0;
-gdjs.Create_47ConnectCode.GDUser_9595iconObjects1.length = 0;
-gdjs.Create_47ConnectCode.GDUser_9595iconObjects2.length = 0;
-gdjs.Create_47ConnectCode.GDUser_9595iconObjects3.length = 0;
-gdjs.Create_47ConnectCode.GDUser_9595iconObjects4.length = 0;
-gdjs.Create_47ConnectCode.GDAppsObjects1.length = 0;
-gdjs.Create_47ConnectCode.GDAppsObjects2.length = 0;
-gdjs.Create_47ConnectCode.GDAppsObjects3.length = 0;
-gdjs.Create_47ConnectCode.GDAppsObjects4.length = 0;
-gdjs.Create_47ConnectCode.GDSettingsObjects1.length = 0;
-gdjs.Create_47ConnectCode.GDSettingsObjects2.length = 0;
-gdjs.Create_47ConnectCode.GDSettingsObjects3.length = 0;
-gdjs.Create_47ConnectCode.GDSettingsObjects4.length = 0;
-gdjs.Create_47ConnectCode.GDFilesObjects1.length = 0;
-gdjs.Create_47ConnectCode.GDFilesObjects2.length = 0;
-gdjs.Create_47ConnectCode.GDFilesObjects3.length = 0;
-gdjs.Create_47ConnectCode.GDFilesObjects4.length = 0;
+gdjs.login_95screenCode.GDBackgroundObjects1.length = 0;
+gdjs.login_95screenCode.GDBackgroundObjects2.length = 0;
+gdjs.login_95screenCode.GDlogoObjects1.length = 0;
+gdjs.login_95screenCode.GDlogoObjects2.length = 0;
+gdjs.login_95screenCode.GDASCObjects1.length = 0;
+gdjs.login_95screenCode.GDASCObjects2.length = 0;
+gdjs.login_95screenCode.GDLogin_95952PointsObjects1.length = 0;
+gdjs.login_95screenCode.GDLogin_95952PointsObjects2.length = 0;
+gdjs.login_95screenCode.GDSenha_95952PointsObjects1.length = 0;
+gdjs.login_95screenCode.GDSenha_95952PointsObjects2.length = 0;
+gdjs.login_95screenCode.GDDuvidasObjects1.length = 0;
+gdjs.login_95screenCode.GDDuvidasObjects2.length = 0;
+gdjs.login_95screenCode.GDEntrarObjects1.length = 0;
+gdjs.login_95screenCode.GDEntrarObjects2.length = 0;
+gdjs.login_95screenCode.GDLoginObjects1.length = 0;
+gdjs.login_95screenCode.GDLoginObjects2.length = 0;
+gdjs.login_95screenCode.GDSenhaObjects1.length = 0;
+gdjs.login_95screenCode.GDSenhaObjects2.length = 0;
+gdjs.login_95screenCode.GDlogo_9595pessoalObjects1.length = 0;
+gdjs.login_95screenCode.GDlogo_9595pessoalObjects2.length = 0;
+gdjs.login_95screenCode.GDUUIDObjects1.length = 0;
+gdjs.login_95screenCode.GDUUIDObjects2.length = 0;
+gdjs.login_95screenCode.GDerrorObjects1.length = 0;
+gdjs.login_95screenCode.GDerrorObjects2.length = 0;
 
-gdjs.Create_47ConnectCode.eventsList4(runtimeScene);
-gdjs.Create_47ConnectCode.GDTitleObjects1.length = 0;
-gdjs.Create_47ConnectCode.GDTitleObjects2.length = 0;
-gdjs.Create_47ConnectCode.GDTitleObjects3.length = 0;
-gdjs.Create_47ConnectCode.GDTitleObjects4.length = 0;
-gdjs.Create_47ConnectCode.GDNomeObjects1.length = 0;
-gdjs.Create_47ConnectCode.GDNomeObjects2.length = 0;
-gdjs.Create_47ConnectCode.GDNomeObjects3.length = 0;
-gdjs.Create_47ConnectCode.GDNomeObjects4.length = 0;
-gdjs.Create_47ConnectCode.GDSenhaObjects1.length = 0;
-gdjs.Create_47ConnectCode.GDSenhaObjects2.length = 0;
-gdjs.Create_47ConnectCode.GDSenhaObjects3.length = 0;
-gdjs.Create_47ConnectCode.GDSenhaObjects4.length = 0;
-gdjs.Create_47ConnectCode.GDEmailObjects1.length = 0;
-gdjs.Create_47ConnectCode.GDEmailObjects2.length = 0;
-gdjs.Create_47ConnectCode.GDEmailObjects3.length = 0;
-gdjs.Create_47ConnectCode.GDEmailObjects4.length = 0;
-gdjs.Create_47ConnectCode.GDTelephoneObjects1.length = 0;
-gdjs.Create_47ConnectCode.GDTelephoneObjects2.length = 0;
-gdjs.Create_47ConnectCode.GDTelephoneObjects3.length = 0;
-gdjs.Create_47ConnectCode.GDTelephoneObjects4.length = 0;
-gdjs.Create_47ConnectCode.GDIdadeObjects1.length = 0;
-gdjs.Create_47ConnectCode.GDIdadeObjects2.length = 0;
-gdjs.Create_47ConnectCode.GDIdadeObjects3.length = 0;
-gdjs.Create_47ConnectCode.GDIdadeObjects4.length = 0;
-gdjs.Create_47ConnectCode.GDCreateObjects1.length = 0;
-gdjs.Create_47ConnectCode.GDCreateObjects2.length = 0;
-gdjs.Create_47ConnectCode.GDCreateObjects3.length = 0;
-gdjs.Create_47ConnectCode.GDCreateObjects4.length = 0;
-gdjs.Create_47ConnectCode.GDLogObjects1.length = 0;
-gdjs.Create_47ConnectCode.GDLogObjects2.length = 0;
-gdjs.Create_47ConnectCode.GDLogObjects3.length = 0;
-gdjs.Create_47ConnectCode.GDLogObjects4.length = 0;
-gdjs.Create_47ConnectCode.GDNextObjects1.length = 0;
-gdjs.Create_47ConnectCode.GDNextObjects2.length = 0;
-gdjs.Create_47ConnectCode.GDNextObjects3.length = 0;
-gdjs.Create_47ConnectCode.GDNextObjects4.length = 0;
-gdjs.Create_47ConnectCode.GDConnectObjects1.length = 0;
-gdjs.Create_47ConnectCode.GDConnectObjects2.length = 0;
-gdjs.Create_47ConnectCode.GDConnectObjects3.length = 0;
-gdjs.Create_47ConnectCode.GDConnectObjects4.length = 0;
-gdjs.Create_47ConnectCode.GDVoltadoObjects1.length = 0;
-gdjs.Create_47ConnectCode.GDVoltadoObjects2.length = 0;
-gdjs.Create_47ConnectCode.GDVoltadoObjects3.length = 0;
-gdjs.Create_47ConnectCode.GDVoltadoObjects4.length = 0;
-gdjs.Create_47ConnectCode.GDHomeObjects1.length = 0;
-gdjs.Create_47ConnectCode.GDHomeObjects2.length = 0;
-gdjs.Create_47ConnectCode.GDHomeObjects3.length = 0;
-gdjs.Create_47ConnectCode.GDHomeObjects4.length = 0;
-gdjs.Create_47ConnectCode.GDUser_9595iconObjects1.length = 0;
-gdjs.Create_47ConnectCode.GDUser_9595iconObjects2.length = 0;
-gdjs.Create_47ConnectCode.GDUser_9595iconObjects3.length = 0;
-gdjs.Create_47ConnectCode.GDUser_9595iconObjects4.length = 0;
-gdjs.Create_47ConnectCode.GDAppsObjects1.length = 0;
-gdjs.Create_47ConnectCode.GDAppsObjects2.length = 0;
-gdjs.Create_47ConnectCode.GDAppsObjects3.length = 0;
-gdjs.Create_47ConnectCode.GDAppsObjects4.length = 0;
-gdjs.Create_47ConnectCode.GDSettingsObjects1.length = 0;
-gdjs.Create_47ConnectCode.GDSettingsObjects2.length = 0;
-gdjs.Create_47ConnectCode.GDSettingsObjects3.length = 0;
-gdjs.Create_47ConnectCode.GDSettingsObjects4.length = 0;
-gdjs.Create_47ConnectCode.GDFilesObjects1.length = 0;
-gdjs.Create_47ConnectCode.GDFilesObjects2.length = 0;
-gdjs.Create_47ConnectCode.GDFilesObjects3.length = 0;
-gdjs.Create_47ConnectCode.GDFilesObjects4.length = 0;
+gdjs.login_95screenCode.eventsList1(runtimeScene);
+gdjs.login_95screenCode.GDBackgroundObjects1.length = 0;
+gdjs.login_95screenCode.GDBackgroundObjects2.length = 0;
+gdjs.login_95screenCode.GDlogoObjects1.length = 0;
+gdjs.login_95screenCode.GDlogoObjects2.length = 0;
+gdjs.login_95screenCode.GDASCObjects1.length = 0;
+gdjs.login_95screenCode.GDASCObjects2.length = 0;
+gdjs.login_95screenCode.GDLogin_95952PointsObjects1.length = 0;
+gdjs.login_95screenCode.GDLogin_95952PointsObjects2.length = 0;
+gdjs.login_95screenCode.GDSenha_95952PointsObjects1.length = 0;
+gdjs.login_95screenCode.GDSenha_95952PointsObjects2.length = 0;
+gdjs.login_95screenCode.GDDuvidasObjects1.length = 0;
+gdjs.login_95screenCode.GDDuvidasObjects2.length = 0;
+gdjs.login_95screenCode.GDEntrarObjects1.length = 0;
+gdjs.login_95screenCode.GDEntrarObjects2.length = 0;
+gdjs.login_95screenCode.GDLoginObjects1.length = 0;
+gdjs.login_95screenCode.GDLoginObjects2.length = 0;
+gdjs.login_95screenCode.GDSenhaObjects1.length = 0;
+gdjs.login_95screenCode.GDSenhaObjects2.length = 0;
+gdjs.login_95screenCode.GDlogo_9595pessoalObjects1.length = 0;
+gdjs.login_95screenCode.GDlogo_9595pessoalObjects2.length = 0;
+gdjs.login_95screenCode.GDUUIDObjects1.length = 0;
+gdjs.login_95screenCode.GDUUIDObjects2.length = 0;
+gdjs.login_95screenCode.GDerrorObjects1.length = 0;
+gdjs.login_95screenCode.GDerrorObjects2.length = 0;
 
 
 return;
 
 }
 
-gdjs['Create_47ConnectCode'] = gdjs.Create_47ConnectCode;
+gdjs['login_95screenCode'] = gdjs.login_95screenCode;
