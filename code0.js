@@ -42,7 +42,9 @@ gdjs.copyArray(runtimeScene.getObjects("Login"), gdjs.login_95screenCode.GDLogin
 }
 {runtimeScene.getGame().getVariables().getFromIndex(2).setString(runtimeScene.getScene().getVariables().getFromIndex(0).getChild("Role").getAsString());
 }
-{gdjs.evtTools.runtimeScene.pushScene(runtimeScene, "main_screen");
+{runtimeScene.getGame().getVariables().getFromIndex(3).setNumber(runtimeScene.getScene().getVariables().getFromIndex(0).getChild("id").getAsNumber());
+}
+{gdjs.evtTools.runtimeScene.pushScene(runtimeScene, "load");
 }
 }
 
@@ -112,7 +114,7 @@ for (var i = 0, k = 0, l = gdjs.login_95screenCode.GDUUIDObjects1.length;i<l;++i
 gdjs.login_95screenCode.GDUUIDObjects1.length = k;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(15818948);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(11573252);
 }
 }
 if (isConditionTrue_0) {
